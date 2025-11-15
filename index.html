@@ -1,0 +1,1557 @@
+git status<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+    <title>영화의 전당</title>
+     <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.3/jquery.scrollTo.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.2.2/jquery.mousewheel.min.js"></script>
+
+    <script src="./js/main.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <!--swiper-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand&family=Noto+Sans+KR:wght@100..900&display=swap"
+        rel="stylesheet">
+    <!--파비콘!-->
+    <link rel="icon" href="./images/main_img/favicon.png">
+</head>
+
+
+<body>
+    <!-- 1280px 10px  -->
+
+    <header class="header_outer">
+<div class="red">*메뉴의'영화와 비평'을 누르면 '영화와 비평' 페이지로 이동합니다.</div>
+
+        <header class="pc_header">
+            <div class="gnb_top">
+                <div class="logo_pc"><a href="../html/index.html"><img src="./images/main_img/logo_white.png" alt="logo"></a></div>
+                <div class="gnb_outer_pc">
+                    <div class="gnb_menu_wrap">
+                        <!-- <div class="slanted-box"></div> -->
+                        <ul class="gnb_menu">
+                            <li>로그인</li>
+                            <li>회원가입</li>
+                            <li>마이페이지</li>
+                            <li>고객센터</li>
+                        </ul>
+                    </div><!--gnb_menu_wrap-->
+                </div><!---gnb_outer_pc-->
+            </div><!--gnb_top-->
+            <div class="main_menu">
+                <div class="menu_js">
+                    <div class="menu_outer">
+                        <ul class="menu">
+                            <li>영화 </li>
+                            <li>공연/전시/프로그램</li>
+                            <li>예매</li>
+                            <li>예술관</li>
+                            <li>아카데미</li>
+                        </ul>
+                    </div><!--menu_outer-->
+                    <div class="inner_menu_wrap">
+                        <div class="inner_menu">
+                            <ul>
+                                <li>상영시간표</li>
+                                <li>현재상영작</li>
+                                <li>상영예정작</li>
+                                <li><a href="./sub_page/sub.html">영화와비평</a></li>
+                                <li>관람후기</li>
+                            </ul>
+
+                            <ul>
+                                <li>공연/전시 프로그램 안내</li>
+                                <li>공연 일정</li>
+                                <li>전시 일정</li>
+                                <li>프로그램 일정</li>
+                            </ul>
+
+                            <ul>
+                                <li>예매하기</li>
+                                <li>예매</li>
+                            </ul>
+
+                            <ul>
+                                <li>영화도서관 소개</li>
+                                <li>이용 안내</li>
+                                <li>자료 검색</li>
+                                <li>대여/대관 안내</li>
+                                <li>대여/대관 신청</li>
+                                <li>시설 안내</li>
+                            </ul>
+
+                            <ul>
+                                <li>아카데미</li>
+                                <li>아카데미 안내</li>
+                                <li>아카데미 신청</li>
+                                <li>영화 아카데미</li>
+                                <li>예술 아카데미</li>
+                                <li>어린이 청소년 아카데미</li>
+                            </ul>
+
+                        </div><!--inner_menu-->
+                    </div><!--inner_menu_wrap-->
+                </div><!---menu_js-->
+                <div class="search_box_pc">
+                    <input type="search" class="search_pc">
+                    <div class="mag_pc" href="#"><img src="./images/main_img/glass.png" alt="돋보기"></div>
+                </div>
+            </div><!--main_menu-->
+        </header><!--pc_header-->
+
+
+    </header><!--header_outer-->
+
+
+
+    <div class="mb_header">
+        <div class="logo">
+            <img src="./images/main_img/header_logo.png" alt="logo">
+        </div>
+
+
+
+
+        <div class="mb_header_right">
+
+            <div class="search_box_mb">
+                <input type="search" class="search_box">
+                <div class="mag"><img src="./images/main_img/glass.png" alt="돋보기"></div>
+            </div><!--search_box_mb-->
+
+            <input type="checkbox" id="menu_btn">
+
+
+            <label for="menu_btn">
+                <div class="open_btn"><img src="./images/main_img/menu_btn.png" alt="열기버튼"></div>
+                <div class="close_btn"><img src="./images/main_img/exit_x_icon.png" alt="닫기버튼"></div>
+            </label>
+            <div class="login_window">
+
+                <div class="login">로그인 <div><img src="./images/main_img/login_arrow.png" alt="login_button">
+                    </div>
+                </div>
+                <div class="login_flex">
+                    <input type="radio" name="inner_menu" id="movie" checked>
+                    <input type="radio" name="inner_menu" id="play">
+                    <input type="radio" name="inner_menu" id="book">
+                    <input type="radio" name="inner_menu" id="place">
+                    <input type="radio" name="inner_menu" id="academy">
+
+
+                    <div class="login_menu">
+                        <label for="movie">영화</label>
+                        <label for="play">공연/전시/프로그램</label>
+                        <label for="book">예매</label>
+                        <label for="place">예술공간</label>
+                        <label for="academy">아카데미</label>
+                    </div>
+
+                    <div class="login_tab">
+                        <ul>
+                            <li>상영시간표</li>
+                            <li>현재상영작</li>
+                            <li>상영예정작</li>
+                            <li><a href="./sub_page/sub.html">영화와비평</a></li>
+                            <li>관람후기</li>
+                        </ul>
+
+                        <ul>
+                            <li>공연/전시 프로그램 안내</li>
+                            <li>공연 일정</li>
+                            <li>전시 일정</li>
+                            <li>프로그램 일정</li>
+                        </ul>
+
+                        <ul>
+                            <li>예매하기</li>
+                            <li>예매</li>
+                        </ul>
+
+                        <ul>
+                            <li>영화도서관 소개</li>
+                            <li>이용 안내</li>
+                            <li>자료 검색</li>
+                            <li>대여/대관 안내</li>
+                            <li>대여/대관 신청</li>
+                            <li>시설 안내</li>
+                        </ul>
+
+                        <ul>
+                            <li>아카데미</li>
+                            <li>아카데미 안내</li>
+                            <li>아카데미 신청</li>
+                            <li>영화 아카데미</li>
+                            <li>예술 아카데미</li>
+                            <li>어린이 청소년 아카데미</li>
+                        </ul>
+                    </div><!---login_tab-->
+                </div>
+                <div class="login_event">
+                    <p>EVENT</p>
+                    <div href="#"><img src="./images/main_img/inner_event.png" alt="이벤트배너"></div>
+                </div><!--login_event-->
+
+                <div class="login_sns_box">
+                    <div class="login_sns">
+                        <div href="#"><img src="./images/main_img/icon_facebook.png" alt="페이스북"></div>
+                        <div href="#"><img src="./images/main_img/icon_instagram.png" alt="인스타그램"></div>
+                        <div href="#"><img src="./images/main_img/icon_twitter.png" alt="트위터"></div>
+                        <div href="#"><img src="./images/main_img/icon_youtube.png" alt="유튜브"></div>
+                    </div><!--login_sns-->
+                </div><!--login_sns_box--->
+
+            </div><!--login_window-->
+
+        </div><!--mb_header_right-->
+
+    </div><!--mb_header -->
+
+
+
+    <div class="visual_banner_outer">
+
+
+
+        <div class="swiper visual_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slide_inner">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="./images/main_img/visual_banner_01_1.png" />
+                            <source media="(min-width: 601px)" srcset="./images/main_img/wide_banner_01_601.png" />
+                            <source media="(min-width: 320px)" srcset="./images/main_img/wide_banner_01_320.png" />
+                            <img src="./images/main_img/wide_banner_01.png" alt="배너1" />
+                        </picture>
+                        <div class="gradi"><img src="./images/main_img/Rectangle_1280.png" alt="그라디언트1"></div>
+
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_inner">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="./images/main_img/visual_banner_02_1.png" />
+                            <source media="(min-width: 601px)" srcset="./images/main_img/wide_banner_02_601.png" />
+                            <source media="(min-width: 320px)" srcset="./images/main_img/wide_banner_02_320.png" />
+                            <img src="./images/main_img/wide_banner_02.png" alt="배너2" />
+                        </picture>
+                        <div class="gradi"><img src="./images/main_img/Rectangle_1280.png" alt="그라디언트2"></div>
+                    </div>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="slide_inner">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="./images/main_img/visual_banner_03_1.png" />
+                            <source media="(min-width: 601px)" srcset="./images/main_img/wide_banner_03_601.png" />
+                            <source media="(min-width: 320px)" srcset="./images/main_img/wide_banner_03_320.png" />
+                            <img src="./images/main_img/wide_banner_03.png" alt="배너3" />
+                        </picture>
+                        <div class="gradi"><img src="./images/main_img/Rectangle_1280.png" alt="그라디언트3"></div>
+
+                    </div>
+                </div>
+            </div><!--swiper-wrapper-->
+            <div class="swiper_pagination_wrap">
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!---visual_banner-->
+    </div><!--visual_banner_outer-->
+
+    <div class="banner_box_outer">
+        <div class="banner_box">
+            <div class="inner_box">
+                <div><img src="./images/main_img/banner_01.jpg" alt="배너1"></div>
+                <div><img src="./images/main_img/banner_02.jpg" alt="배너2"></div>
+                <div><img src="./images/main_img/banner_03.jpg" alt="배너3"></div>
+            </div>
+            <div class="inner_box">
+                <div><img src="./images/main_img/banner_04.jpg" alt="배너4"></div>
+                <div><img src="./images/main_img/banner_05.jpg" alt="배너5"></div>
+                <div><img src="./images/main_img/banner_06.jpg" alt="배너6"></div>
+            </div>
+        </div><!---banner_box-->
+    </div><!---banner_box_outer-->
+
+    <div class="banner_box_tb swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="inner_box_tb">
+                    <div><img src="./images/main_img/banner_01.jpg" alt="배너1"></div>
+                    <div><img src="./images/main_img/banner_02.jpg" alt="배너2"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner_box_tb">
+                    <div><img src="./images/main_img/banner_03.jpg" alt="배너3"></div>
+                    <div><img src="./images/main_img/banner_04.jpg" alt="배너4"></div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="inner_box_tb">
+                    <div><img src="./images/main_img/banner_05.jpg" alt="배너5"></div>
+                    <div><img src="./images/main_img/banner_06.jpg" alt="배너6"></div>
+                </div>
+            </div>
+        </div><!---swiper-wrapper-->
+    </div><!--banner_box_tb-->
+
+    <div class="poster_outer">
+        <input type="radio" name="movie_box" id="popular_box" checked>
+        <input type="radio" name="movie_box" id="upcoming_box">
+
+        <section class="poster">
+            <label for="popular_box" class="popular_txt">인기상영작</label>
+            <label for="upcoming_box" class="upcoming_txt">상영예정작</label>
+
+            <div class="popular">
+                <input type="radio" name="chart_list" id="chart01" checked>
+                <input type="radio" name="chart_list" id="chart02">
+
+                <div class="chart_list">
+
+                    <div class="list chart_list01">
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_01.jpg" alt="인기상영작1">
+                                <div class="number">1</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_02.jpg" alt="인기상영작2">
+                                <div class="number">2</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_03.jpg" alt="인기상영작3">
+                                <div class="number">3</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_04.jpg" alt="인기상영작4">
+                                <div class="number">4</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_05.jpg" alt="인기상영작5">
+                                <div class="number">5</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+
+
+                        <label for="chart02" class="right_btn btn"><img src="./images/main_img/right_btn_light.png"
+                                alt="오른쪽버튼"></label>
+
+                    </div><!--chart_list01-->
+
+                    <div class="list chart_list02">
+                        <label for="chart01" class="left_btn btn"><img src="./images/main_img/left_btn_light.png"
+                                alt="왼쪽버튼"></label>
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_06.jpg" alt="인기상영작6">
+                                <div class="number">6</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_07.jpg" alt="인기상영작7">
+                                <div class="number">7</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_08.jpg" alt="인기상영작8">
+                                <div class="number">8</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예약하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_09.jpg" alt="인기상영작9">
+                                <div class="number">9</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">예매하기 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_10.jpg" alt="인기상영작10">
+                                <div class="number">10</div>
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate">예매율 35%</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                    </div><!--chart_list02-->
+
+                </div><!--chart_list-->
+            </div><!--popular-->
+
+            <div class="upcoming">
+
+                <input type="radio" name="upcoming_list" id="upc01" checked>
+                <input type="radio" name="upcoming_list" id="upc02">
+
+                <div class="upc_list">
+
+                    <div class="list upc_list01">
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_11.jpg" alt="상영예정작1">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_12.jpg" alt="상영예정작2">
+\                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_13.jpg" alt="상영예정작3">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_14.jpg" alt="상영예정작4">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_15.png" alt="상영예정작5">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <label for="upc02" class="right_btn btn"><img src="./images/main_img/right_btn_light.png"
+                                alt="오른쪽버튼"></label>
+                    </div><!--upc_list01-->
+
+                    <div class="list upc_list02">
+                        <label for="upc01" class="left_btn btn"><img src="./images/main_img/left_btn_light.png"
+                                alt="왼쪽버튼"></label>
+
+
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_16.png" alt="상영예정작6">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_17.png" alt="상영예정작7">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_18.png" alt="상영예정작8">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_19.png" alt="상영예정작9">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                        <div class="poster_box">
+                            <div class="cover">
+                                <div class="book book_more">상영정보 ></div>
+                                <div class="book detail_more">자세히 보기 ></div>
+                            </div><!--cover-->
+                            <div class="list_img">
+                                <img src="./images/main_img/poster_20.png" alt="상영예정작10">
+                            </div><!--list_img-->
+                            <div class="title_box">
+                                <p class="rate"> 예정개봉일 2025. 08. 25</p>
+                                <p class="movie_title">범죄도시4</p>
+                            </div><!--title_box-->
+                        </div><!--poster_box-->
+                    </div><!--upc_list02-->
+                </div><!--upc_list-->
+            </div><!-- upcoming-->
+        </section><!--poster-->
+    </div><!--poster_outer-->
+
+
+
+    <section class="mb_poster">
+
+        <input type="radio" name="poster_tab" id="tab_popular" checked>
+        <input type="radio" name="poster_tab" id="tab_upcoming">
+
+
+        <div class="poster_tabs">
+            <label for="tab_popular" class="tab_btn tab_popular">인기상영작</label>
+            <label for="tab_upcoming" class="tab_btn tab_upcoming">상영예정작</label>
+        </div>
+
+        <!-- 인기상영작 Swiper -->
+        <div class="swiper poster_swiper popular">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_01.jpg" alt="포스터1" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">F1</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_02.jpg" alt="포스터2" />
+                        <div class="number_mb">2</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_03.jpg" alt="포스터3" />
+                        <div class="number_mb">3</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_04.jpg" alt="포스터4" />
+                        <div class="number_mb">4</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_05.jpg" alt="포스터5" />
+                        <div class="number_mb">5</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_06.jpg" alt="포스터06" />
+                        <div class="number_mb">6</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_07.jpg" alt="포스터7" />
+                        <div class="number_mb">7</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_08.jpg" alt="포스터8" />
+                        <div class="number_mb">8</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_09.jpg" alt="포스터9" />
+                        <div class="number_mb">9</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_10.jpg" alt="포스터10" />
+                        <div class="number_mb">10</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+            </div>
+        </div>
+
+        <!-- 상영예정작 Swiper -->
+        <div class="swiper poster_swiper upcoming">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_11.jpg" alt="포스터11" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_12.jpg" alt="포스터12" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_13.jpg" alt="포스터13" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_14.jpg" alt="포스터14" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_15.png" alt="포스터15" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_16.png" alt="포스터16" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_17.png" alt="포스터17" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_18.png" alt="포스터18" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_19.png" alt="포스터19" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+                <div class="swiper-slide">
+                    <div class="poster_box_mb">
+                        <img src="./images/main_img/poster_20.png" alt="포스터20" />
+                        <div class="number_mb">1</div>
+                    </div><!--poster_box_mb-->
+                    <div class="title_box">
+                        <p class="rate">예매율 35%</p>
+                        <p class="movie_title">범죄도시4</p>
+                    </div><!--title_box-->
+                </div><!--swiper-slide-->
+            </div>
+        </div>
+    </section><!--mb_poster-->
+
+
+
+
+    <div class="sub_title">일정표</div>
+
+<div class="cal_date_wrap">
+<div class="calendar_container">
+    <div class="cal_date_box">
+   <div class="calendar_date"><img src="./images/main_img/left_btn_light.png" alt="왼쪽버튼"></div> 
+   <div class="month"> July 2025</div>
+   <div class="calendar_date"><img src="./images/main_img/right_btn_light.png" alt="오른쪽버튼"></div> 
+    </div>
+
+    <div class="calendar">
+      <!-- 요일 헤더 -->
+      <div class="day">Sun</div>
+      <div class="day">Mon</div>
+      <div class="day">Tue</div>
+      <div class="day">Wed</div>
+      <div class="day">Thu</div>
+      <div class="day">Fri</div>
+      <div class="day">Sat</div>
+
+
+      <div class="empty"></div>
+      <div class="empty"></div>
+      <div class="date">1</div>
+      <div class="date">2</div>
+      <div class="date">3</div>
+      <div class="date">4</div>
+      <div class="date">5</div>
+
+      <!-- 나머지 날짜 -->
+      <div class="date">6</div>
+      <div class="date">7</div>
+      <div class="date">8</div>
+      <div class="date">9</div>
+      <div class="date">10</div>
+      <div class="date">11</div>
+      <div class="date">12</div>
+
+      <div class="date">13</div>
+      <div class="date today">14</div>
+      <div class="date">15</div>
+      <div class="date">16</div>
+      <div class="date">17</div>
+      <div class="date">18</div>
+      <div class="date">19</div>
+
+      <div class="date">20</div>
+      <div class="date">21</div>
+      <div class="date">22</div>
+      <div class="date">23</div>
+      <div class="date">24</div>
+      <div class="date">25</div>
+      <div class="date">26</div>
+
+      <div class="date">27</div>
+      <div class="date">28</div>
+      <div class="date">29</div>
+      <div class="date">30</div>
+      <div class="date">31</div>
+    </div>
+</div><!--calendar_container-->
+
+
+
+
+
+<div class="table_container">
+<div class="date_box">
+    <div><img src="./images/main_img/left_btn_light.png" alt="왼쪽버튼"></div>
+    <div>6월 17일 (화)</div>
+    <div><img src="./images/main_img/right_btn_light.png" alt="오른쪽버튼"></div>
+</div><!--date_box-->
+
+<div class="tabs">
+    <button class="tab active" data-target="movie_list">영화</button>
+    <button class="tab" data-target="gallery">전시</button>
+    <button class="tab" data-target="playing">공연</button>
+</div><!---tabs-->
+
+
+<div class="table_wrap" id="movie_list" style="display: block;">
+<table>
+<thead>
+    <tr>
+        <th>시간</th>
+        <th>구분</th>
+        <th>영화제목</th>
+        <th>상영장소</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>10:00</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>범죄도시</td>
+        <td>액션</td>
+    </tr>
+
+    <tr>
+        <td>12:10</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>타이타닉</td>
+        <td>시네마테크</td>
+    </tr>
+    <tr>
+        <td>14:40</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>해리포터</td>
+        <td>중극장</td>
+    </tr>
+    <tr>
+        <td>17:00</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>쥬라기월드:새로운 시작</td>
+        <td>소극장</td>
+    </tr>
+    <tr>
+        <td>19:10</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>F1 더 무비</td>
+        <td>야외극장</td>
+    </tr>
+ <tr>
+        <td>10:00</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>사랑의 하츄핑</td>
+        <td>인디+</td>
+    </tr>
+ <tr>
+        <td>10:00</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>인디아나존스5</td>
+        <td>대극장</td>
+    </tr>
+     <tr>
+        <td>10:00</td>
+        <td><span class="type_movie">영화</span></td>
+        <td>웰컴투 동막골</td>
+        <td>소극장</td>
+    </tr>
+
+</tbody>
+</table>
+</div><!--table_wrap-->
+
+
+<div class="table_wrap" id="gallery" style="display: none;">
+<table>
+<thead>
+    <tr>
+        <th>시간</th>
+        <th>구분</th>
+        <th>영화제목</th>
+        <th>상영장소</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>10:00</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>사라지는 것들의 흔적</td>
+        <td>다목적홀</td>
+    </tr>
+
+    <tr>
+        <td>-</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>어린이날 큰잔치</td>
+        <td>야외극장</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>감성체험 가루나무모래흙</td>
+        <td>다목적홀</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>상상공작소 '미래월드'</td>
+        <td>다목적홀</td>
+    </tr>
+    <tr>
+        <td>-</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>국제어린이청소년 아트페어</td>
+        <td>시네라운지</td>
+    </tr>
+ <tr>
+        <td>-</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>사막의 속삭임</td>
+        <td>시네라운지</td>
+    </tr>
+     <tr>
+        <td>-</td>
+        <td><span class="type_movie">전시</span></td>
+        <td>범죄도시</td>
+        <td>인디+</td>
+    </tr>
+
+</tbody>
+</table>
+</div><!--table_wrap-->
+
+<div class="table_wrap" id="playing" style="display: none;">
+<table>
+<thead>
+    <tr>
+        <th>시간</th>
+        <th>구분</th>
+        <th>영화제목</th>
+        <th>상영장소</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>10:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>국립국악원 [연희의 판]</td>
+        <td>하늘연극장</td>
+    </tr>
+
+    <tr>
+        <td>12:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>국립심포니오케스트라 무소륵스키, '전람회의 그림'</td>
+        <td>하늘아트홀</td>
+    </tr>
+    <tr>
+        <td>13:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>로마인이야기</td>
+        <td>하늘연극장</td>
+    </tr>
+    <tr>
+        <td>15:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>이상한 나라의 춘자씨</td>
+        <td>하늘아트홀</td>
+    </tr>
+    <tr>
+        <td>15:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>독립군아리랑</td>
+        <td>소극장</td>
+    </tr>
+ <tr>
+        <td>16:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>드림하이</td>
+        <td>하늘연극장</td>
+    </tr>
+     <tr>
+        <td>18:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>11시 음악연극장</td>
+        <td>하늘연극장</td>
+    </tr>
+ <tr>
+        <td>17:00</td>
+        <td><span class="type_movie">공연</span></td>
+        <td>십이야</td>
+        <td>하늘연극장</td>
+    </tr>
+</tbody>
+</table>
+</div><!--table_wrap-->
+</div><!--table_container-->
+</div><!-- cal_date_wrap -->
+
+    <div class="key_outer">
+        <div class="key_inner">
+            <div class="key_title_wrap">
+                <div class="key_title">
+                    <div><img src="./images/main_img/quotation_left.png" alt="왼쪽따옴표"></div>
+                    <p>키워드</p>
+                    <div><img src="./images/main_img/quotation_right.png" alt="오른쪽따옴표"></div>
+                </div> <!--key_title-->
+                <div class="key_title_second">영화의 전당 키워드를 선택하여 즐겨보세요!</div>
+            </div><!--key_title_wrap-->
+
+            <div class="key_wrap">
+                <div class="key_box">
+                    <div class="key_track">
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_01_crop.png" alt="영화장르1"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">스릴러</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_02_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">성장/청춘</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_03_crop.png" alt="영화장르3"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">스포츠</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_04_crop.png" alt="영화장르4"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">코미디</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_05_crop.png" alt="영화장르5"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">뮤지컬</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_06_crop.png" alt="영화장르6"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">로맨스</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_07_crop.png" alt="영화장르7"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">판타지</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_08_crop.png" alt="영화장르8"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">SF</div>
+                        </div><!--key-->
+                    </div><!---key_track-->
+                </div><!---key_box-->
+
+
+
+                <div class="key_box_second">
+                    <div class="key_second_track">
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_09_crop.png" alt="영화장르1"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">액션</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_10_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">가족</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_11_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">호러</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_12_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">다큐멘터리</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_13_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">실화</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_14_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">성장/청춘</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_15_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">종교</div>
+                        </div><!--key-->
+                        <div class="key">
+                            <div class="key_bg"><img src="./images/main_img/keyword_16_crop.png" alt="영화장르2"></div>
+                            <div class="key_overlay"></div>
+                            <div class="key_text">애니메이션</div>
+                        </div><!--key-->
+                    </div><!--key_second_track--->
+                </div><!--key_box_second-->
+            </div><!--key_wrap-->
+        </div><!--key_inner-->
+    </div><!--key_outer-->
+
+    <div class="sub_title">인기비평</div>
+    <div class="cri_wrap">
+        <div class="more_btn_pc">비평 전체보기</div>
+        <div class="more_btn_mb">비평 전체보기 ></div>
+
+        <div class="criticism">
+            <div class="main_cri">
+                <div><img src="./images/main_img/boyinthepool.jpg" alt="메인 비평01"></div>
+                <div class="text_box">
+                    <p>보이 인 더 풀, 풀 밖의소녀</p>
+                    <div class="cri_text_main">분야에 따라 차이가 있기는 하지만, 특히 예•체능 계통은 취미와 직업 사이에서 선택에 따른 인생의 희비가 엇갈릴 가능성이 크다.
+                        예를 들어 영화를 좋아하는 것과 영화를 잘 찍는 것은 완전히 다른 분야에 따라 차이가 있기는 하지만,
+                        특히 예•체능 계통은 취미와 직업 사이에서 선택에 따른 인생의 희비가 엇갈릴 가능성이 크다.
+                        예를 들어 영화를 좋아하는 것과 영화를 잘 찍는 것은 완전히 다른 분야에 따라 차이가 있기는 하지만,
+                        특히 예•체능 계통은 취미와 직업 사이에서 선택에 따른 인생의 희비가 엇갈릴 가능성 이 크고 있다.
+                        예를 들어 영화를 좋아하는 것과 영화를 잘 찍는 것은 완전히 다른 분야에 따라 차이가 있기는 하지만,
+                        특히 예•체능 계통은 취미와 직업 사이에서 선택에 따른 인생의 희비가 엇갈릴 가능성 이 크고 있다.
+                    </div>
+                </div><!--text_box-->
+            </div><!--main_cri-->
+            <div class="sub_cri_in">
+                <div><img src="./images/main_img/busters.jpg" alt="서브 비평01"></div>
+                <div class="text_box">
+                    <p>버스터 키튼의 방식으로 호소하는 찰리 채플린</p>
+                    <div class="cri_text">재학 중인 대학원에서 타 대학 교수의 강연을 들을 기회가 있었다. 그는 AI 시대의 도래를 말하며
+                        이제 대다수의 노동자는 AI에 의해 대체될 거라고, AI를 활용하는 법을 익히지 못한다면
+                        도태는 시기상조라고 경고하였다. Chat GPT가 나보다 문장력이 훨씬 뛰어남을 실감하며
+                        경외와 절망을 동시에 느끼는 요즘인 만큼 강연자의 말을 쉽사리 반박할 수는 없었다.
+                    </div>
+                </div><!--text_box-->
+            </div><!--sub_cri_in-->
+            <div class="sub_cri_in">
+                <div><img src="./images/main_img/파과.jpg" alt="서브 비평02"></div>
+                <div class="text_box">
+                    <p> 파과 : 사랑, 쓸모, 늙어감에 관하여</p>
+                    <div class="cri_text">민규동 감독의 영화 '파과'는 익숙한 한국 영화의 문법에서 한 걸음 비켜 서 있다.
+                        그것은 영화가 ‘노년 여성(조각)’에 주목한다는 사실 때문만은 아니다.
+                        영화의 변곡점은 늙어감을 소멸이 과정이 아닌 세상을 다르게 감지하고 해석할 수 있는
+                        또 다른 층위로, 사랑을 이 시점의 관계가 아닌 내면에 새겨진 기억의 반성으로,
+                        쓸모를 사회적 기능이 아닌 자기 존엄의 언어로 재정립하고 있다는 데 있다...
+                    </div>
+                </div><!--text_box-->
+            </div><!--sub_cri_in-->
+            <div class="sub_cri_in">
+                <div><img src="./images/main_img/분리수거.jpg" alt="서브 비평03"></div>
+                <div class="text_box">
+                    <p> 분리수거: 어떻게 만나고, 어떻게 헤어질까?</p>
+                    <div class="cri_text">이 영화는 남녀가 만나고 헤어지는 다양한 사례를 제시함으로써, 재연뿐만 아니라 관객에게도 남녀관계의 여러 문제에 대해 돌아보게 만든다.
+                        그런데 이러한 영화의 아이디어가 적절하게 연출되었는지, 특히 플래시백의 사용에 대해 생각해보게 된다. 영화는 도입부에서 한 달 전의 시간으로 되돌아가기 때문에 재연이
+                        제주도에서 서울로 돌아와 쓰레기장에서 분리수거를 할 때까지, 모든 장면은 플래시백이라고 할 수 있다.
+                    </div>
+                </div><!--text_box-->
+            </div><!--sub_cri_in-->
+        </div><!---criticism-->
+    </div><!--cri_wrap-->
+
+    <div class="sub_title">
+        <p class="sub_title">최신인기작 VIDEO</p>
+    </div>
+
+    <section class="video">
+        <div>
+            <iframe height="703" max-width="1280px" src="https://www.youtube.com/embed/QrCJhgC8j9o" title="[귤레귤레] 메인 예고편"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="sub_title">EVENT</div>
+    <div class="swiper event_mb_swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./images/main_img/event01.jpg" alt="이벤트포스터1">
+                <div class="event_title">2025 영화사랑방 한국고전영화</div>
+                <div class="event_title02">2025.02.01 ~ 2025.07.13</div>
+            </div>
+            <div class="swiper-slide"><img src="./images/main_img/event02.jpg" alt="이벤트포스터2">
+                <div class="event_title">세계영화사의 위대한 유산, 월드시네마20</div>
+                <div class="event_title02">2025.04.01 ~ 2025.10.13</div>
+            </div>
+            <div class="swiper-slide"><img src="./images/main_img/event03.jpg" alt="이벤트포스터3">
+                <div class="event_title">2025 영화의전당 가치봄 정기상영회 </div>
+                <div class="event_title02">2025.05.01 ~ 2025.07.12</div>
+            </div>
+            <div class="swiper-slide"><img src="./images/main_img/event04.jpg" alt="이벤트포스터4">
+                <div class="event_title">2025 영화의 전당 야외상영회</div>
+                <div class="event_title02">2025.03.10 ~ 2025.07.23</div>
+            </div>
+
+        </div><!--swiper-wrapper-->
+    </div><!--event_mb_swiper-->
+<div class="event_list">
+    <div class="event_item"> <img src="./images/main_img/event01.jpg" alt="이벤트포스터1">
+        <div class="event_title">2025 영화사랑방 한국고전영화</div>
+        <div class="event_title02">2025.05.01 ~ 2025.07.13</div>
+    </div>
+    <div class="event_item"><img src="./images/main_img/event02.jpg" alt="이벤트포스터2">
+        <div class="event_title">세계영화사의 위대한 유산</div>
+        <div class="event_title02">2025.05.01 ~ 2025.07.13</div>
+    </div>
+    <div class="event_item"><img src="./images/main_img/event03.jpg" alt="이벤트포스터3">
+        <div class="event_title">영화의전당 가치봄 정기상영회 </div>
+        <div class="event_title02">2025.05.01 ~ 2025.07.13</div>
+    </div>
+    <div class="event_item"><img src="./images/main_img/event04.jpg" alt="이벤트포스터4">
+        <div class="event_title">영화의 전당 야외상영회</div>
+        <div class="event_title02">2025.05.01 ~ 2025.07.13</div>
+    </div>
+</div><!--event_list-->
+
+
+
+    <div class="sub_title">베스트관람후기</div>
+    <div class="review_header">
+        <div class="more_btn_pc">리뷰 전체보기</div>
+        <div class="more_btn_mb">비평 전체보기 ></div>
+    </div><!---review_header-->
+  
+
+    <div class="review">
+        <div class="review_inner">
+            <div class="review_txt">
+                <div class="review_title">
+                    <p>28년후</p>
+                </div>
+                <div class="review_cont">시리즈물 치고는 나름 괜찮은 듯 ‘알파 감염자’가 나타나고, 뼈로 만든 사찰 같은 골격 구조물이 구축된 장면들은, 문명 이후에도 “인간은 결국
+                    야생 본능으로 돌아간다”는 깊은 울림을 줬어요 충격적인 마지막 장면은 다음 장 ‘Bone Temple’로 이어지는 전초전이라는 점에서 시리즈에 대한 기대감과 호기심을 극대화했어요
+                    결말은 감정적 정서에서 급변한 장르적 회오리와 문화적·철학적 계시, 그리고 후속 시리즈로 확장되는 서사를 짚는 빅 휘슬을 동시에 불러일으킨다는 점에서, 정말 강렬하게 기억에
+                    남습니다.
+                </div>
+                <div class="writer">
+                    <div><img src="./images/main_img/avatar1.png" alt="아바타1"></div>
+                    <p>agga****</p>
+                    <div>★★★★★</div>
+                </div><!---writer-->
+            </div><!---review_txt-->
+            <div class="review_img"><img src=".//images/main_img/review01.jpg" alt="후기1"></div>
+        </div><!---review_inner-->
+
+        <div class="review_inner">
+            <div class="review_txt">
+                <div class="review_title">
+                    <p>드래곤 길들이기</p>
+                </div>
+                <div class="review_cont">시리즈물 치고는 나름 괜찮은 듯 ‘알파 감염자’가 나타나고, 뼈로 만든 사찰 같은 골격 구조물이 구축된 장면들은, 문명 이후에도 “인간은 결국
+                    야생 본능으로 돌아간다”는 깊은 울림을 줬어요 충격적인 마지막 장면은 다음 장 ‘Bone Temple’로 이어지는 전초전이라는 점에서 시리즈에 대한 기대감과 호기심을 극대화했어요
+                    결말은 감정적 정서에서 급변한 장르적 회오리와 문화적·철학적 계시, 그리고 후속 시리즈로 확장되는 서사를 짚는 빅 휘슬을 동시에 불러일으킨다는 점에서, 정말 강렬하게 기억에
+                    남습니다.
+
+                </div>
+                <div class="writer">
+                    <div><img src="./images/main_img/avatar1.png" alt="아바타1"></div>
+                    <p>agga****</p>
+                    <div>★★★★★</div>
+                </div><!---writer-->
+            </div><!---review_txt-->
+            <div class="review_img"><img src=".//images/main_img/review02.jpg" alt="후기1"></div>
+        </div><!---review_inner-->
+
+        <div class="review_inner hide_review">
+            <div class="review_txt">
+                <div class="review_title">
+                    <p>30일</p>
+                </div>
+                <div class="review_cont">시리즈물 치고는 나름 괜찮은 듯 ‘알파 감염자’가 나타나고, 뼈로 만든 사찰 같은 골격 구조물이 구축된 장면들은, 문명 이후에도 “인간은 결국
+                    야생 본능으로 돌아간다”는 깊은 울림을 줬어요 충격적인 마지막 장면은 다음 장 ‘Bone Temple’로 이어지는 전초전이라는 점에서 시리즈에 대한 기대감과 호기심을 극대화했어요
+                    결말은 감정적 정서에서 급변한 장르적 회오리와 문화적·철학적 계시, 그리고 후속 시리즈로 확장되는 서사를 짚는 빅 휘슬을 동시에 불러일으킨다는 점에서, 정말 강렬하게 기억에
+                    남습니다.
+                </div>
+                <div class="writer">
+                    <div><img src="./images/main_img/avatar1.png" alt="아바타3"></div>
+                    <p>agga****</p>
+                    <div>★★★★★</div>
+                </div><!---writer-->
+            </div><!---review_txt-->
+            <div class="review_img"><img src=".//images/main_img/review03.jpg" alt="후기1"></div>
+        </div><!---review_inner-->
+
+        <div class="review_inner hide_review">
+            <div class="review_txt">
+                <div class="review_title">
+                    <p>탈주</p>
+                </div>
+                <div class="review_cont">시리즈물 치고는 나름 괜찮은 듯 ‘알파 감염자’가 나타나고, 뼈로 만든 사찰 같은 골격 구조물이 구축된 장면들은, 문명 이후에도 “인간은 결국
+                    야생 본능으로 돌아간다”는 깊은 울림을 줬어요 충격적인 마지막 장면은 다음 장 ‘Bone Temple’로 이어지는 전초전이라는 점에서 시리즈에 대한 기대감과 호기심을 극대화했어요
+                    결말은 감정적 정서에서 급변한 장르적 회오리와 문화적·철학적 계시, 그리고 후속 시리즈로 확장되는 서사를 짚는 빅 휘슬을 동시에 불러일으킨다는 점에서, 정말 강렬하게 기억에
+                    남습니다.
+                </div>
+                <div class="writer">
+                    <div><img src="./images/main_img/avatar1.png" alt="아바타4"></div>
+                    <p>agga****</p>
+                    <div>★★★★★</div>
+                </div><!---writer-->
+            </div><!---review_txt-->
+            <div class="review_img"><img src=".//images/main_img/review04.jpg" alt="후기1"></div>
+        </div><!---review_inner-->
+    </div><!---review-->
+
+<div class="review_btn">후기 더 보기</div>
+
+<div class="fix_btn">
+<div class="book_btn">예매하기</div>
+<div class="top_btn">
+   <img src="./images/main_img/top_btn.png" alt="탑버튼">
+</div>
+</div><!--fix_btn-->
+
+    <div class="sns">
+        <div class="sns_box">
+            <div><img src="./images/main_img/icon_facebook.png" alt="페이스북"></div>
+            <div><img src="./images/main_img/icon_youtube.png" alt="유튜브"></div>
+            <div><img src="./images/main_img/icon_instagram.png" alt="인스타그램"></div>
+            <div><img src="./images/main_img/icon_twitter.png" alt="트위터"></div>
+        </div>
+    </div><!---sns-->
+
+
+    <div class="wide_banner"><img src="./images/main_img/wide_banner.jpg" alt="와이드배너"></div>
+    <div class="sponsor">
+        <div><img src="./images/main_img/footer_logo2.png" alt="협찬사2"></div>
+        <div><img src="./images/main_img/footer_logo3.png" alt="협찬사3"></div>
+        <div><img src="./images/main_img/footer_logo4.png" alt="협찬사4"></div>
+        <div><img src="./images/main_img/footer_logo6.png" alt="협찬사6"></div>
+        <div><img src="./images/main_img/footer_logo7.png" alt="협찬사7"></div>
+    </div><!--sponsor-->
+
+    <div class="footer_top">
+        <div class="top_inner">
+            <div class="custom_wrap">
+                <div class="custom">
+                    <div>고객센터<p>051-912-1000</p>
+                    </div>
+
+                    <p>고객센터 운영시간 09:00~18:00</p>
+                </div>
+                <div class="btn_box">
+                    <div class="custom_btn">1:1문의하기</div>
+                    <div class="custom_btn">FAQ</div>
+                </div><!--btn_box-->
+            </div><!--custom_wrap-->
+
+
+            <div class="foot_logo">
+                <div><img src="./images/main_img/certification_logo.png" alt="푸터로고1"></div>
+                <div><img src="./images/main_img/korea_unique.png" alt="푸터로고2"></div>
+            </div>
+        </div><!--top_inner-->
+    </div><!--footer_top-->
+
+
+    <div class="footer_bottom">
+        <div class="footer_inner">
+            <div class="info_left">
+                <p>공지사항</p>
+                <div class="info">
+                    <p>[공지] 영화의전당 '야외광장', '야외극장' 명칭 공모</p>
+                    <p>[공지] 영화의전당 나이트투어 여름 밤마실 안내</p>
+                    <p>[공지] (재)영화의전당 임직원 사칭 전화 주의하세요!</p>
+                    <p>[공지] 2025 한국문화예술위원회 지원사업 - (무료) 반작 빤짝 예술씨앗!</p>
+                </div><!---info-->
+            </div><!--info_left-->
+            <div class="info_right_pc">
+                <div>
+                    <span>개인정보처리방침 |</span>
+                    <span>이용약관 |</span>
+                    <span>장애인이용안내 |</span>
+                    <span>취소/환불가이드 |</span>
+                    <span>정보공개</span>
+                </div>
+                <div>
+                    <span>(우)48058 부산광역시 해운대구 수영강변대로 120 영화의전당(우동 1467번지) </span>
+                    <span>TEL. 051-780-6000/6080 / Fax. 051-780-6019 </span>
+                </div>
+                <div>
+                    <span>(재)영화의전당 대표자 고인범 사업자번호 : 617-82-11427 </span>
+                    <span>통신판매업신고 : 부산해운 제0510호 사업자정보 확인 <br></span>
+                    <span> COPYRIGHT(C) BUSAN CINEMA CENTER. ALL RIGHTS RESERVED</span>
+                </div>
+            </div>
+        </div><!--info_right_pc-->
+    </div><!--footer_inner-->
+    <div class="site_wrap">
+        <div class="more_site">영화의 전당</div>
+    </div>
+    <div class="sns_mb">
+        <div class="sns_box_mb">
+            <div><img src="./images/main_img/icon_facebook.png" alt="페이스북"></div>
+            <div><img src="./images/main_img/icon_youtube.png" alt="유튜브"></div>
+            <div><img src="./images/main_img/icon_instagram.png" alt="인스타그램"></div>
+            <div><img src="./images/main_img/icon_twitter.png" alt="트위터"></div>
+        </div>
+    </div><!---sns_mb-->
+    <div class="info_right">
+        <div>
+            <span>개인정보처리방침 |</span>
+            <span>이용약관 |</span>
+            <span>장애인이용안내 |</span>
+            <span>취소/환불가이드 |</span>
+            <span>정보공개</span>
+        </div>
+        <div>
+            <span>(우)48058 부산광역시 해운대구 수영강변대로 120 영화의전당(우동 1467번지) </span>
+            <span>TEL. 051-780-6000/6080 / Fax. 051-780-6019 </span>
+        </div>
+        <div>
+            <span>(재)영화의전당 대표자 고인범 사업자번호 : 617-82-11427 </span>
+            <span>통신판매업신고 : 부산해운 제0510호 사업자정보 확인 <br></span>
+            <span> COPYRIGHT(C) BUSAN CINEMA CENTER. ALL RIGHTS RESERVED</span>
+        </div>
+    </div>
+    <div class="bot_logo"><img src="./images/main_img/certification_logo.png" alt="푸터로고1"></div>
+    </div><!--info_right-->
+    </div><!--footer_bottom-->
+</body>
+
+</html>
