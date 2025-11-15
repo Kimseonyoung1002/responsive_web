@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
             482: {
                 slidesPerView: 2.2,
             },
-          
         },
     });
 });//card_banner_mb_tb
@@ -162,3 +161,59 @@ calendarDates.forEach(dateEl => {
     selectDate(dateNumber);
   });
 });//calender_event
+
+
+const leftMonthBtn = document.querySelector('.cal_date_box .calendar_date img[alt="왼쪽버튼"]');
+const rightMonthBtn = document.querySelector('.cal_date_box .calendar_date img[alt="오른쪽버튼"]');
+const monthDisplay = document.querySelector('.cal_date_box .month');
+
+let currentYear = year;  
+let currentMonth = month;
+
+function showMonth() {
+  const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  monthDisplay.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+}
+
+leftMonthBtn.addEventListener('click', () => {
+  currentMonth--;
+  if(currentMonth < 0){
+    currentMonth = 11;
+    currentYear--;
+  }
+  showMonth();
+});
+
+rightMonthBtn.addEventListener('click', () => {
+  currentMonth++;
+  if(currentMonth > 11){
+    currentMonth = 0;
+    currentYear++;
+  }
+  showMonth();
+});
+//달력 상단 화살표 변경
+
+const dateLeftBtn = document.querySelector('.date_box div:first-child img');
+const dateRightBtn = document.querySelector('.date_box div:last-child img');
+
+let selectedDate = defaultDate; 
+
+dateLeftBtn.addEventListener('click', () => {
+  let newDate = selectedDate - 1;
+  if(newDate < 1){
+    newDate = 1;
+  }
+  selectedDate = newDate;
+  selectDate(selectedDate); 
+});
+
+dateRightBtn.addEventListener('click', () => {
+  let newDate = selectedDate + 1;
+  if(newDate > 31){
+    newDate = 31;
+  }
+  selectedDate = newDate;
+  selectDate(selectedDate);
+});
+//상영표 상단 화살표 변경
