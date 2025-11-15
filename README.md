@@ -43,27 +43,74 @@
 
 ---
 
-# 🔍 코드 리뷰 
-
-아래는 프로젝트에서 구현한 **일정표(캘린더) 영역의 핵심 기능들**입니다.
+# 📌 주요 기능 상세
 
 ---
 
-## 1️⃣ 탭 전환 기능  
-`data-target` 속성을 기반으로 콘텐츠를 전환하는 구조.
+## 1) 날짜 선택 기능
 
 ```javascript
-const tabs = document.querySelectorAll('.tab');
-const contents = document.querySelectorAll('.table_wrap');
+const calendarDates = document.querySelectorAll('.calendar .date');
+const displayDate = document.querySelector('.date_box div:nth-child(2)');
+const year = 2025;
+const month = 6;
+const days = ['일', '월', '화', '수', '목', '금', '토'];
+const defaultDate = 14;
 
-tabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    const targetId = tab.getAttribute('data-target');
+function selectDate(day) {
+  calendarDates.forEach(date => date.classList.remove('selected'));
 
-    tabs.forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
+  calendarDates.forEach(date => {
+    if (parseInt(date.textContent) === day) {
+      date.classList.add('selected');
 
-    contents.forEach(c => (c.style.display = 'none'));
-    document.getElementById(targetId).style.display = 'block';
+      const selected = new Date(year, month, day);
+      const dayOfWeek = days[selected.getDay()];
+      displayDate.textContent = `${month + 1}월 ${day}일 (${dayOfWeek})`;
+    }
   });
+}
+
+selectDate(defaultDate);
+
+calendarDates.forEach(date =>
+  date.addEventListener('click', () => {
+    selectDate(parseInt(date.textContent));
+  })
+);
+
+## 2) 달력 월 이동
+
+```javascript
+const leftBtn = document.querySelector('.cal_date_box img[alt="왼쪽버튼"]');
+const rightBtn = document.querySelector('.cal_date_box img[alt="오른쪽버튼"]');
+const monthDisplay = document.querySelector('.cal_date_box .month');
+
+let currentYear = 2025;
+let currentMonth = 6;
+
+function showMonth() {
+  const monthNames = [
+    "January","February","March","April","May","June",
+    "July","August","September","October","November","December"
+  ];
+  monthDisplay.textContent = `${monthNames[currentMonth]} ${currentYear}`;
+}
+
+leftBtn.addEventListener('click', () => {
+  currentMonth--;
+  if (currentMonth < 0) {
+    currentMonth = 11;
+    currentYear--;
+  }
+  showMonth();
+});
+
+rightBtn.addEventListener('click', () => {
+  currentMonth++;
+  if (currentMonth > 11) {
+    currentMonth = 0;
+    currentYear++;
+  }
+  showMonth();
 });
