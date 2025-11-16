@@ -9,8 +9,8 @@
 ## 📆 프로젝트 개요
 - **개발 기간:** 2025.07  
 - **참여 인원:** 5명 
-- **본인 역할:** 일정표(캘린더), 탭 메뉴, 날짜 선택 UI 등 주요 JS 기능 개발  
-- **기획 & 디자인:** 팀 공동 진행  
+- **본인 역할:** 메인 페이지 기획, 일정표(캘린더), 날짜 선택 UI 등 주요 JS 기능  
+- **기획 & 디자인:** 팀 공동 진행 (피그마 작업)
 - **배포 링크:** https://Kimseonyoung1002.github.io/responsive_web
 - **GitHub Repository:** https://github.com/Kimseonyoung1002/responsive_web
 
@@ -31,6 +31,45 @@
 
 ---
 
+## 🗂️ 폴더 구조
+```bash
+public/
+ ┣ data/
+ ┃ ┗ freeboardData.json
+ ┣ fonts/
+ ┗ images/
+src/
+ ┣ components/
+ ┃ ┣ ProductCard.jsx
+ ┃ ┣ Header.jsx
+ ┃ ┣ Footer.jsx
+ ┃ ┗ VisualBanner.jsx
+ ┣ pages/
+ ┃ ┣ AboutPage.jsx
+ ┃ ┣ CartPage.jsx
+ ┃ ┣ CommunityPage.jsx
+ ┃ ┣ CommunityPage.module
+ ┃ ┣ DetailPage.jsx
+ ┃ ┣ ShopPage.jsx
+ ┃ ┗ MainPage.jsx
+ ┣ redux/
+ ┃ ┣ store.js
+ ┃ ┗ cartSlice.js
+ ┣ data/
+ ┃ ┗ desserts.js
+ ┣ styles/
+ ┃ ┗ GlobalStyle.js
+ ┣ index.css
+ ┣ index.jsx
+ ┣ App.css
+ ┗ App.jsx
+```
+
+---
+
+
+
+
 ## 🖥 주요 기능 (Team Project Features)
 
 | 기능 | 설명 |
@@ -45,7 +84,10 @@
 
 # 📌 주요 기능 상세
 
----
+<br>
+
+🖼️ UI 미리보기
+<p align="center"> <img src="./fna.jpg" width="45%" /> <img src="./qna.jpg" width="45%" /> </p>
 
 ## 1) 날짜 선택 기능
 
@@ -78,6 +120,7 @@ calendarDates.forEach(date =>
     selectDate(parseInt(date.textContent));
   })
 );
+```
 
 ## 2) 달력 월 이동
 
