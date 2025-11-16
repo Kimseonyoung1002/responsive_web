@@ -9,10 +9,24 @@
 ## 📆 프로젝트 개요
 - **개발 기간:** 2025.07  
 - **참여 인원:** 5명 
-- **본인 역할:** 메인 페이지 기획, 일정표(캘린더), 날짜 선택 UI 등 주요 JS 기능  
+- **본인 역할:** 메인 페이지 기획, 캘린더, 날짜 선택 UI 등 주요 JS 기능  
 - **기획 & 디자인:** 팀 공동 진행 (피그마 작업)
 - **배포 링크:** https://Kimseonyoung1002.github.io/responsive_web
 - **GitHub Repository:** https://github.com/Kimseonyoung1002/responsive_web
+
+---
+
+
+
+## 🖥 주요 기능 (Team Project Features)
+
+| 기능 | 설명 |
+|------|------|
+| 🎞 반응형 슬라이더 | Swiper.js breakpoints 적용, 각 화면 크기별 슬라이드 개수 변경 |
+| 📝 리뷰 toggle | 클릭 시 내용 보이기/숨기기 |
+| 📊 탭 전환 | data-target 기반 콘텐츠 전환 |
+| 📅 날짜 선택 | 선택된 날짜 하이라이트 + 요일 계산 표시 |
+| 📆 달력 월 이동 | 화살표 클릭 시 월 변경 + 상단 날짜 표시 |
 
 ---
 
@@ -33,56 +47,32 @@
 
 ## 🗂️ 폴더 구조
 ```bash
-public/
- ┣ data/
- ┃ ┗ freeboardData.json
- ┣ fonts/
- ┗ images/
-src/
- ┣ components/
- ┃ ┣ ProductCard.jsx
- ┃ ┣ Header.jsx
- ┃ ┣ Footer.jsx
- ┃ ┗ VisualBanner.jsx
- ┣ pages/
- ┃ ┣ AboutPage.jsx
- ┃ ┣ CartPage.jsx
- ┃ ┣ CommunityPage.jsx
- ┃ ┣ CommunityPage.module
- ┃ ┣ DetailPage.jsx
- ┃ ┣ ShopPage.jsx
- ┃ ┗ MainPage.jsx
- ┣ redux/
- ┃ ┣ store.js
- ┃ ┗ cartSlice.js
- ┣ data/
- ┃ ┗ desserts.js
- ┣ styles/
- ┃ ┗ GlobalStyle.js
- ┣ index.css
- ┣ index.jsx
- ┣ App.css
- ┗ App.jsx
+html/
+ ┣ css/
+ ┃ ┣ img/
+ ┃ ┣ footer.css
+ ┃ ┣ header.css
+ ┃ ┗ main.css
+ ┣ js/
+ ┃ ┣ header.css
+ ┃ ┗ main.css
+ ┣ images/
+ ┣ sub_page/
+ ┃ ┣ css/
+ ┃ ┃ ┣ footer.css
+ ┃ ┃ ┣ header.css
+ ┃ ┃ ┗ main.css
+ ┃ ┣ js/
+ ┃ ┃ ┣ header.css
+ ┃ ┃ ┗ main.css
+ ┃ ┣ sub_img/
+ ┃ ┗ sub.html
+ ┗ index.html
 ```
 
 ---
 
-
-
-
-## 🖥 주요 기능 (Team Project Features)
-
-| 기능 | 설명 |
-|------|------|
-| 🎞 반응형 슬라이더 | Swiper.js breakpoints 적용, 각 화면 크기별 슬라이드 개수 변경 |
-| 📝 리뷰 toggle | 클릭 시 내용 보이기/숨기기 |
-| 📊 탭 전환 | data-target 기반 콘텐츠 전환 |
-| 📅 날짜 선택 | 선택된 날짜 하이라이트 + 요일 계산 표시 |
-| 📆 달력 월 이동 | 화살표 클릭 시 월 변경 + 상단 날짜 표시 |
-
----
-
-# 📌 주요 기능 상세
+## 📌 주요 기능 상세
 
 <br>
 
