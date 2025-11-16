@@ -695,7 +695,6 @@ th, td {
      width: 100%;
      height: 500px;
      background-color: rgb(0, 2, 72);
-     /* display: flex; */
      display: none;
      align-items: center;
  }
@@ -1069,6 +1068,7 @@ th, td {
 
  @media all and (min-width: 601px) {
 /* 테블릿이상 601 */
+
      .banner_box_outer,
      .poster_outer {
          display: none;
@@ -1091,14 +1091,13 @@ th, td {
         
         padding: 20px;
         box-sizing: border-box;
-        text-align: center;
-        
+        text-align: center;    
     }
+
      .event_item img {
         width: 100%;
         height: auto;
         display: block; 
-        
         }
 
 
@@ -1109,8 +1108,6 @@ th, td {
     .cal_date_wrap {
         display: flex;
         flex-direction: column;
-
-
     }
 
 
@@ -1170,12 +1167,6 @@ th, td {
     .event_mb_swiper {
         display: none;
     }
-
-
-
-.table_container, .calendar_container {
-
-}
      .review {
          flex-direction: row;
          flex-wrap: wrap;
@@ -1236,18 +1227,14 @@ th, td {
         justify-content: space-between;
         align-items: center;
         gap: 10px;
-
         display: flex;
         flex-wrap: nowrap;
         overflow-x: auto; 
-
-
     }
 
      .event_list .event_item {
         width: calc((100% - 30px) / 4);
      }
-    
  }
 
 
@@ -1268,10 +1255,10 @@ th, td {
      }
 
          .cal_date_wrap {
-        display: flex;
-        width: 1280px;
-        justify-content: space-between;
-        align-items: center;
+         display: flex;
+         width: 1280px;
+         justify-content: space-between;
+         align-items: center;
          flex-direction: row;
          margin: 0 auto;
     }

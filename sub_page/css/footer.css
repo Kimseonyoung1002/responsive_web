@@ -96,17 +96,19 @@
     height: auto;
   
 }
+
 .foot_logo div:last-child {
     width: 300px;
     height: auto;
 }
+
 .footer_top {
     max-width: 1280px;
     margin: 0 auto;    
     border-bottom: 1px solid rgb(97, 97, 97);
-    
     background-color: #eee;
 }
+
 .top_inner {
     display: flex;
     justify-content: space-between;
@@ -122,18 +124,17 @@
 .info_left {
     padding: 20px 0; 
     border-bottom: 1px solid rgb(97, 97, 97);
-
 }
 
 .site_wrap {
     display: flex;
     justify-content: center;
 }
+
 .more_site {
   position: relative;
   display: inline-block;
   margin: 20px auto;
-  
 }
 
 .more_site::after {

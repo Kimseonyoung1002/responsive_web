@@ -188,17 +188,12 @@
 
  .sub_title_pc {
    display: none;
-
    max-width: 1280px;
    margin: 50px auto 20px;
    font-weight: bold;
    font-size: 1.6rem;
    text-align: center;
  }
-
-
-
-
 
  aside {
    display: none;
@@ -232,21 +227,12 @@
      font-size: 1.3rem;
      font-weight: bold;
    }
-
    .cover {
-
      height: 30%;
-
    }
-
  }
 
-
-
  @media all and (min-width: 769px) {
-
-
-
    .banner {
      position: relative;
      max-width: 70%;
@@ -261,8 +247,6 @@
      object-fit: cover;
      border-radius: 20px;
    }
-
-
 
    .cri_person img {
      max-width: 305px;
@@ -282,7 +266,6 @@
    .human_citizen {
      display: flex;
      justify-content: space-between;
-
    }
 
    .citizen_ban {
@@ -298,8 +281,6 @@
    .sub_title {
      display: none;
    }
-
-
 
    .cri_person_box {
      max-width: 1280px;
@@ -324,28 +305,20 @@
 
    .cri_person.active .cri_name {
      color: #EC008C;
-
    }
-
 
    .intro_display {
      padding: 10px;
-
    }
 
    .cri_name {
      color: #000248;
      font-size: 1.2rem;
    }
-
-
-
  }
 
 
  @media all and (min-width: 1281px) {
-
-
    .outer {
      display: flex;
      flex-wrap: wrap;
@@ -374,9 +347,5 @@
      flex: 1;
      padding-left: 20px;
      box-sizing: border-box;
-
-
    }
-
-
  }
