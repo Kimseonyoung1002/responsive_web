@@ -77,7 +77,7 @@ html/
 <br>
 
 🖼️ UI 미리보기
-<p align="center"> <img src="./fna.jpg" width="45%" /> <img src="./qna.jpg" width="45%" /> </p>
+<p align="center"> <img src="./cal_img.jpg" width="100%" /></p>
 
 ## 1) 날짜 선택 기능
 
